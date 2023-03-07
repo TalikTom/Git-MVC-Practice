@@ -11,7 +11,7 @@ $autoLoad=[
     BP_APP . 'model'
 ];
 
-$paths = implode(PATH_SEPARATOR,$autoLoad);
+$paths = implode(PATH_SEPARATOR, $autoLoad);
 
 set_include_path($paths);
 
