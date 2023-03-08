@@ -1,0 +1,14 @@
+<form class="log-in-form" method="post"
+      action="/login/authorization">
+    <h4 class="text-center">Login</h4>
+    <label>Email
+        <input type="email" name="email"
+               placeholder="Enter email here"
+               value="<?=$email?>">
+    </label>
+    <label>Password
+        <input type="password" name="password" placeholder="Password">
+    </label>
+    <p><input type="submit" class="button expanded" value="Login"></input></p>
+    <?=$message?>
+</form>

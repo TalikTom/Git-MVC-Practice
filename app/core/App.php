@@ -61,4 +61,9 @@ class App
         $instance->$method();
     }
 
+    public static function auth()
+    {
+        return isset($_SESSION['auth']);
+    }
+
 }
