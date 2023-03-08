@@ -11,4 +11,22 @@ class IndexController extends Controller
     }
 
 
+    public function login()
+    {
+        $this->view->render('login',[
+            'message'=>'',
+            'email'=>''
+        ]);
+
+    }
+
+    public function logout()
+    {
+        unset($_SESSION['auth']);
+        session_destroy();
+        header('location: /');
+
+    }
+
+
 }
